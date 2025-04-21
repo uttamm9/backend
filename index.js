@@ -6,7 +6,7 @@ require('dotenv').config();
 const router = require('./routers/userRoute');
 
 const port = process.env.PORT || 3000;
-const mongo_url = process.env.mongo_url || 'mongodb://localhost:27017/mydatabase';
+const mongo_url = process.env.mongo_url || 'mongodb+srv://uttamftspl:2Gk6iCQbuNFpg4iP@cluster0.6u2hix6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
