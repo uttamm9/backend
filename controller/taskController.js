@@ -258,6 +258,7 @@ exports.uploadSheet = async (req, res) => {
                   }
             
     await fetchAndSaveTasks();
+    res.status(200).json({message: 'Tasks imported successfully'});
 
    } catch (error) {
     return res.status(500).json({message: 'Internal server error'});
